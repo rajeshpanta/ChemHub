@@ -1,0 +1,78 @@
+/* Login.module.scss */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.login-logo-image {
+    width: 800px;  // Increase the width as needed
+    height: auto;  // Set height to auto to maintain aspect ratio
+}
+
+.login-vertical-divider {
+    height: 50vh;
+    width: 1px;
+    background-color: #ddd;
+    margin: 0 20px;
+}
+
+.login-form-container {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.login-header {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-submit-button:hover {
+    background-color: #0056b3;
+}
+
+.login-invalid {
+    border-color: #ff4500;
+}
+
+.login-error-message {
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.login-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}

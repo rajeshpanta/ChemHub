@@ -1,0 +1,115 @@
+// src/styles/Header.module.scss
+.header {
+    display: flex;
+    flex-direction: column;  // Stacks children vertically
+    width: 100%;  // Full width
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 0;
+    padding: 0;
+}
+
+.topRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logoText {
+    font-size: 24px;
+    color: #333;
+}
+
+.logoLink {
+    display: flex;
+    align-items: center;
+    color: inherit; // Keeps the text color the same as the surrounding text
+    text-decoration: none; // Removes underline from links
+  }
+  
+.searchContainer {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.searchInput {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.searchButton {
+    padding: 8px 12px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.loginLink {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    flex: 0 0 auto;  // Do not grow or shrink, use auto sizing
+}
+
+.loginLink a {
+     color: #007BFF; 
+    text-decoration: none;
+}
+
+.mainMenu {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;  // Ensures flex layout for the menu items
+    justify-content: space-between;  // Distributes space between items evenly
+}
+
+.mainMenu a {
+    padding: 10px 15px;  // Uniform padding for all menu items
+    color: white;  // Ensures text color is white
+    text-decoration: none;  // Removes underline from links
+    display: block;  // Makes the links take the full area of padding for better clickability
+}
+
+// src/styles/Header.module.scss
+.cartIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;  // Ensure the icon is centered within its container
+    padding: 0 15px;  // Add padding to ensure the icon is not touching the edges
+    min-width: 50px;  // Ensure minimum width for the container
+    height: auto;  // Allow the container to adjust based on content height
+    overflow: visible;  // Ensure nothing is hidden
+}
+
+.cartIcon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  // Use up all the space in the container
+    color: #007BFF;  // Example color, adjust as needed
+    text-decoration: none;
+}
+
+.cartIcon svg {
+    width: 2em;  // Control the size of the icon
+    height: 2em;
+}

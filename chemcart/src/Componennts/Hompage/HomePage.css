@@ -1,0 +1,80 @@
+/* HomePage.css */
+/* Existing styles for background section, product section, and product cards */
+.background-section {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  }
+  .intro-text {
+    text-align: center;
+    padding: 10px 0;  /* Add top and bottom padding */
+    margin: 10px 0;  /* Add top and bottom margin for spacing */
+    background-color: #f8f8f8;  /* Optional: background color to differentiate section */
+  }
+  
+  .product-section {
+    display: flex;
+    flex-wrap: nowrap;  /* Keep everything in one line */
+    overflow-x: auto;  /* Allows scrolling horizontally if the content overflows */
+    gap: 20px;
+    padding: 20px;
+    align-items: center;  /* Align items vertically */
+  }
+  
+  
+  .product-card {
+    flex: 0 1 20%;  /* Flex items can shrink but not grow, with a basis of 20% */
+    min-width: 200px;  /* Prevent cards from becoming too small */
+    max-width: calc(20% - 20px);  /* Ensure max width calculation includes the gap */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px 10px;  /* Provide some horizontal margin for spacing */
+    text-align: center;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;  /* Optional: Adds a subtle animation on hover */
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);  /* Optional: Slightly enlarge cards on hover */
+  }
+  
+  
+  .product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .product-info {
+    padding: 10px;
+  }
+  
+  .view-product-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Add media queries at the end */
+  @media (max-width: 768px) {
+    .product-card {
+      flex: 1 1 50%;  /* Adjusts cards to two per row on smaller screens */
+      max-width: calc(50% - 20px);
+    }
+  
+    .background-section {
+      height: 30vh;  /* Adjusts the height for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,26 @@
+/* This is a placeholder SCSS file */
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-filters {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.job-filter-legend {
+    font-weight: bold;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
