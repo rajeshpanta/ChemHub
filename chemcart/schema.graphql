@@ -1,0 +1,21 @@
+type Product {
+  id: ID!
+  name: String!
+  description: String!
+  price: Float!
+  brand: String
+  sellerId: ID
+  industry: String
+  createdAt: String!
+  updatedAt: String!
+  properties: String!
+  imageIds: [ID!]
+  categoryId: [ID!]
+  attachmentIds: [ID!]
+}
+
+type Query {
+  productsResolver: [Product!]!
+  productsByIdResolver(productId: ID!): [Product!]!
+  productsByNameResolver(name: String!): [Product!]!
+}
