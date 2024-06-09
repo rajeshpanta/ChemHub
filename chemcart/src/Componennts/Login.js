@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./styles/Login.module.scss";
 import chemiLogo from '../images/chemi.jpeg';  
-import Header from "./header/Header";  // Ensure this path is correct based on your project structure
-import Footer from "./footer/Footer";
+import SignupPage from "./SignUP/SignupPage";
 
 function Login() {
   const [username, setUsername] = useState("");
@@ -40,7 +39,7 @@ function Login() {
 
   return (
     <div>
-      <Header /> 
+  
       <div className={styles["login-container"]}>
         <div className={styles["login-logo"]}>
           <a href="/">
@@ -83,9 +82,9 @@ function Login() {
               Sign In
             </button>
             <div className={styles["login-links"]}>
-              <a href="/register">Don't have an account?</a>
-              <a href="/">Back to Home</a>
-            </div>
+            <a href="/signup">Don't have an account? Sign up</a>
+            <a href="/">Back to Home</a>
+          </div>
           </form>
         </div>
       </div>

@@ -1,60 +1,87 @@
 /* ProductPage.css */
 .product-main {
     display: flex;
-    padding: 20px;
+    
+   
+    margin-left: calc(20% + 40px);  /* 20% width of left section plus additional margin */
+    flex: 1;
+    padding-left: 20px;  /* Add padding to maintain spacing */
+
+    
 }
 
-.sidebar {
-    flex: 1;
+.left-section {
+    position: fixed;
+    /*top: 130px;  Adjust this value to be below your header */
+  /*   bottom: 200px; Adjust this value to be above your footer */
+    overflow-x: hidden;
+    width: 20%;
     margin-right: 20px;
+    padding: 20px; /* Added padding for styling, adjust as needed */
+    background: white; /* Makes it visually distinct from the background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: calc(100vh - 160px);
+    overflow: visible;
+    z-index: 2;
+}
+
+.right-section {
+    margin-left: calc(20% + 40px);  /* 20% width of left section plus additional margin */
+    flex: 1;
+    padding-left: 20px;  /* Add padding to maintain spacing */
+}
+
+.product-content {
+    flex: 3;  /* Increased width to occupy more space */
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-right: 20px;  /* Maintain spacing between the sections */
+}
+
+.order-form {
+    flex: 1;  /* Smaller flex factor to reduce width */
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-    align-items: center;  
 }
 
-.company-logo {
-    width: 100px;  
-    height: auto; 
-    margin-bottom: 20px;  
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.sidebar button {
-    background-color: #c8e6c9; /* Light green background */
+.form-group input, .form-group select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    flex: 1;  /* Ensure inputs take available space */
+}
+
+.request-quote, .request-sample {
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    padding: 10px;
-    width: 100%;  
-    text-align: center; 
-    margin: 10px 0;
+    padding: 10px 20px;
+    margin-top: 10px;
     cursor: pointer;
+    width: 100%;  /* Make buttons full width of the form */
 }
 
-.product-details {
-    flex: 4;
-    background-color: #ffffff; /* White background for product details */
-    padding: 20px;
-    margin-right: 20px;
-}
-
-.order-details {
-    flex: 2;
-    background-color: #f0f0f0; /* Light grey background */
-    padding: 20px;
-}
-
-.related-products {
-    background-color: #e0e0e0; /* Slightly darker grey for related products section */
+.additional-info p {
+    margin-top: 10px;
+    background-color: #f4f4f4;
     padding: 10px;
-    margin-top: 20px;
 }
 
-h1, h2, p {
-    margin: 10px 0;
+h1, p {
+    margin-bottom: 10px;
 }
 
-h1 {
-    color: #333; /* Dark grey color for text */
-}
-
-h2 {
-    color: #666; /* Medium grey color for subheaders */
+strong {
+    font-weight: bold;
 }
