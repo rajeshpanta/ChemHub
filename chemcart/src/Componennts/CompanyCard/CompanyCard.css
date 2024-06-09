@@ -1,0 +1,86 @@
+.company-card {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: flex-start; /* Align items at the start of the container */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%; /* Full width */
+    max-width: 960px; /* Maximum width */
+    padding: 20px; /* Padding around the contents */
+}
+
+.company-image-container {
+    flex-shrink: 0;
+    width: 160px; /* Adjusted width */
+    height: 160px; /* Matching height for aspect ratio */
+    background-color: #0047AB; /* Background color for logo container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 20px; /* Right margin for spacing */
+}
+
+.company-logo {
+    width: 70%; /* Relative size inside the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.company-details {
+    display: flex;
+    flex-direction: column; /* Vertical stacking for details */
+    align-items: center; /* Center alignment of text */
+    flex-grow: 1; /* Grow to use available space */
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0; /* Top margin removed for closer placement to logo */
+    margin-bottom: 5px; /* Spacing after the name */
+}
+
+.company-rating {
+    margin-bottom: 5px; /* Spacing after the rating */
+}
+
+.company-info {
+    margin-bottom: 20px; /* Spacing before the button */
+}
+
+.contact-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; /* Auto width based on content */
+}
+
+.company-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align to the top of the section */
+    flex-grow: 1; /* Allow this section to grow */
+    padding-left: 20px; /* Padding for separation */
+}
+
+.company-summary h3 {
+    font-size: 18px;
+    margin-bottom: 10px; /* Space below the header */
+}
+
+.company-summary p, .host-details li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px; /* Space between list items */
+}
+
+.host-details {
+    list-style: none;
+    padding: 0;
+}

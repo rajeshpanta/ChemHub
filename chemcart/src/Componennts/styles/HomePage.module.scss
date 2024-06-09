@@ -1,0 +1,75 @@
+/* HomePage.module.scss */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logoText {
+    font-size: 24px;
+    color: #333;
+}
+
+.searchContainer {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.searchInput {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; // Rounded corners on the left side only
+}
+
+.searchButton {
+    padding: 8px 12px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 0 4px 4px 0; // Rounded corners on the right side
+    cursor: pointer;
+}
+
+.loginLink, .cartIcon {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.loginLink {
+    background-color: #007BFF;
+    border-radius: 4px;
+    color: white;
+    padding: 8px;
+}
+
+.loginLink a {
+    color: white;
+    text-decoration: none;
+}
+.cartIcon a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.cartIcon {
+    display: flex;
+    align-items: center;
+   
+}

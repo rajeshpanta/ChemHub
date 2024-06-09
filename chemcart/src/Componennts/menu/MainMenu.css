@@ -1,0 +1,25 @@
+/* MainMenu.css */
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; /* Light background for visibility */
+    min-width: 100%; /* Ensure it covers the full width of the li */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    z-index: 1;
+    padding: 10px 0; /* Padding for aesthetic spacing */
+    color: #333; /* Dark text for readability */
+}
+
+li:hover .dropdownContent {
+    display: block; /* Show the dropdown content on hover */
+}
+
+.dropdownContent p {
+    padding: 8px 20px; /* Padding inside each dropdown item */
+    margin: 0; /* Avoid additional spacing */
+    border-bottom: 1px solid #eee; /* Light border for separation */
+}
+
+.dropdownContent p:last-child {
+    border-bottom: none; /* No border for the last item */
+}

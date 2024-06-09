@@ -1,0 +1,135 @@
+.company-info-container {
+    display: flex;
+    padding-top: 20px; /* Adjust or remove if needed */
+    background: #f4f4f4;
+    min-height: 100vh;
+    
+}
+
+.left-section {
+    position: fixed;
+ /*top: 130px;  Adjust this value to be below your header */
+  /*   bottom: 200px; Adjust this value to be above your footer */
+    overflow-x: hidden;
+    width: 20%;
+    margin-right: 20px;
+    padding: 20px; /* Added padding for styling, adjust as needed */
+    background: white; /* Makes it visually distinct from the background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: calc(100vh - 160px);
+    overflow: visible;
+    
+}
+.profile-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    display: flex;  /* Enables flexbox layout */
+    flex-direction: column;  /* Stack children vertically */
+    align-items: center;  /* Center-align the items horizontally */
+}
+
+.company-logo {
+    width: 100px;
+    height: 100px;
+    background-color: #0047AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    color: white;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+.company-logo img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.verified-info, h1 {
+    text-align: center;  /* Center-align text */
+    width: 100%;  /* Allow the text to take full width of its container */
+}
+
+.quick-actions-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center-align buttons and content */
+}
+
+.quick-actions-card button {
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about-company button {
+    width: 20%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-section {
+    flex: 1;
+    margin-left: 25%; /* Adjust the margin-left to avoid overlap with the fixed left section */
+    display: flex;
+    flex-direction: column;
+}
+.about-company, .products-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    align-items: flex-start;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+
+h1, h2, p {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
