@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './ProductPage.css';
+import LeftSidebar from "../LeftSidebar/LeftSidebar";
+import Footer from '../footer/Footer';
 
 const ProductPage = () => {
     const { productName } = useParams();
@@ -19,21 +21,7 @@ const ProductPage = () => {
     return (
         <div>
             <div className="left-section">
-                <div className="profile-card">
-                    <img src="/path/to/companyLogo.png" alt="Company Logo" className="company-logo"/>
-                    <h1>ViaTech™ TS1200 GRAN</h1>
-                    <div className="verified-info">
-                        <p>ViaTech 9 products</p>
-                        <p>Documents</p>
-                        <p>Used by .....</p>
-                    </div>
-                    <div className="quick-actions-card">
-                        <h3>QUICK ACTIONS</h3>
-                        <button>Request Sample</button>
-                        <button>Request Document</button>
-                        <button>Ask an Expert</button>
-                    </div>
-                </div>
+                <LeftSidebar />
             </div>
             <main className="product-main">
                 <div className="product-content">
@@ -66,9 +54,13 @@ const ProductPage = () => {
                         <p><strong>Incoterms:</strong> Quote Required</p>
                         <p><strong>Regional Availability:</strong> Quote Required</p>
                     </div>
+                    
                 </div>
-            </main>
+                
+            </main> 
+            
         </div>
+        
     );
 };
 

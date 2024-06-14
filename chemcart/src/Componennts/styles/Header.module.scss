@@ -1,12 +1,14 @@
 // src/styles/Header.module.scss
 .header {
-    display: flex;
-    flex-direction: column;  // Stacks children vertically
-    width: 100%;  // Full width
+    position: fixed;  // Makes the header fixed at the top of the viewport
+    top: 0;  // Aligns the header at the top edge of the viewport
+    left: 0;  // Aligns the header at the left edge of the viewport
+    width: 100%;  // Ensures the header spans the full width of the viewport
     background-color: #f0f0f0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin: 0;
     padding: 0;
+    z-index: 1000;  // Ensures the header stays above other content
 }
 
 .topRow {

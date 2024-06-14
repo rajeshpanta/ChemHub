@@ -3,19 +3,18 @@
     display: flex;
     
    
-    margin-left: calc(20% + 40px);  /* 20% width of left section plus additional margin */
+    margin-left: calc(12% + 40px);  /* 20% width of left section plus additional margin */
     flex: 1;
-    padding-left: 20px;  /* Add padding to maintain spacing */
-
+      /* Add padding to maintain spacing */
+      padding: 20px;
     
 }
 
 .left-section {
     position: fixed;
-    /*top: 130px;  Adjust this value to be below your header */
-  /*   bottom: 200px; Adjust this value to be above your footer */
+   
     overflow-x: hidden;
-    width: 20%;
+    width: 12%;
     margin-right: 20px;
     padding: 20px; /* Added padding for styling, adjust as needed */
     background: white; /* Makes it visually distinct from the background */
@@ -27,7 +26,7 @@
 }
 
 .right-section {
-    margin-left: calc(20% + 40px);  /* 20% width of left section plus additional margin */
+    margin-left: calc(12% + 40px);  /* 20% width of left section plus additional margin */
     flex: 1;
     padding-left: 20px;  /* Add padding to maintain spacing */
 }
@@ -38,6 +37,7 @@
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-right: 20px;  /* Maintain spacing between the sections */
+    padding: 20px;
 }
 
 .order-form {

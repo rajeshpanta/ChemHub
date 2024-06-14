@@ -1,25 +1,32 @@
-/* MainMenu.css */
 .dropdownContent {
     display: none;
     position: absolute;
-    background-color: #f9f9f9; /* Light background for visibility */
-    min-width: 100%; /* Ensure it covers the full width of the li */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    left: 50%; /* Position the left edge of the dropdown at the center of the li */
+    transform: translateX(-50%); /* Move it back to align the center of the dropdown with the center of the li */
+    background-color: #f9f9f9;
+    min-width: 160px; /* Adjusted to ensure sufficient width */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
-    padding: 10px 0; /* Padding for aesthetic spacing */
-    color: #333; /* Dark text for readability */
+    color: #333;
+    border-radius: 4px; /* Rounded corners for the dropdown */
+    flex-direction: column; /* Ensure vertical layout of items */
+    margin-top: 10px; /* Spacing from the top of the li */
+    justify-content: left;
 }
 
 li:hover .dropdownContent {
-    display: block; /* Show the dropdown content on hover */
+    display: flex; /* Flex display to manage direction */
 }
 
 .dropdownContent p {
-    padding: 8px 20px; /* Padding inside each dropdown item */
-    margin: 0; /* Avoid additional spacing */
-    border-bottom: 1px solid #eee; /* Light border for separation */
+    padding: 8px 20px;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+    display: block; /* Ensure it takes up the full width for better clickability */
+    cursor: pointer; /* Make it appear clickable */
+    white-space: nowrap; /* Prevents breaking into a new line */
 }
 
 .dropdownContent p:last-child {
-    border-bottom: none; /* No border for the last item */
+    border-bottom: none; /* Remove border from the last item for a cleaner look */
 }

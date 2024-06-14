@@ -8,15 +8,15 @@ class MainMenu extends Component {
    this.menuItems = [
       {
         title: "Polymers",
-        subItems: ["Key industries include Agriculture, Appliances, Automotive & Transportation, Construction, Electrical & Electronics, Food & Beverage Packaging, Household, Material Handling, Medical, Personal Care, and Textile."]
+        subItems: ["Agriculture", "Appliances","Automotive & Transportation", "Construction", "Electrical & Electronics", "Food & Beverage Packaging", "Household", "Material Handling", "Medical", "Personal Care", "Textile"]
       },
       {
         title: "Coatings",
-        subItems: ["Targets Industrial applications, Interior Paints, Wood, Exterior Paints, Metal Paints, and Plastic Paints."]
+        subItems: ["Targets Industrial applications", "Interior Paints", "Wood", "Exterior Paints", "Metal Paints", "Plastic Paints"]
       },
       {
         title: "Adhesives",
-        subItems: ["Focused on Paper and Packaging, Industrial Adhesives, Wood Adhesives, and Book Binding & Lamination."]
+        subItems: ["Focused on Paper and Packaging", "Industrial Adhesives", "Wood Adhesives","Book Binding","Lamination"]
       },
       {
         title: "Batteries",
@@ -24,20 +24,20 @@ class MainMenu extends Component {
       },
       {
         title: "Rubber",
-        subItems: ["Primarily serves the Automotive, Construction, and Shoe industries."]
+        subItems: ["Primarily serves the Automotive", "Construction", "Shoe industries"]
       },
       {
         title: "Oil & Gas",
-        subItems: ["Concentrates on the BioTech sector."]
+        subItems: ["Concentrates on the BioTech sector"]
       },
       {
         title: "Sustainability Solutions",
-        subItems: ["Includes Polymers for Flexible & Rigid Packaging and Coatings for Solvent & Water-based Paintings."]
+        subItems: ["Includes Polymers for Flexible", "Rigid Packaging", "Coatings for Solvent", "Water-based Paintings"]
       }
     ];
   }
 
-  render() {
+    render() {
     return (
       <div style={{
         display: 'flex',
@@ -51,11 +51,13 @@ class MainMenu extends Component {
       }}>
         <ul style={{
           display: 'flex',
+          justifyContent: 'space-evenly',
           listStyle: 'none',
           padding: '0',
           margin: '0',
           width: '100%',
-          flexWrap: 'wrap'
+          flexWrap: 'wrap',
+          fontSize: "18px",
         }}>
           {this.menuItems.map((item, index) => (
             <li key={index} style={{
@@ -66,7 +68,9 @@ class MainMenu extends Component {
               {item.title}
               <div className="dropdownContent">
                 {item.subItems.map((sub, subIndex) => (
-                  <p key={subIndex}>{sub}</p>
+                  <Link to={`/all-products?category=${encodeURIComponent(sub)}`} key={subIndex} style={{ color: 'white', textDecoration: 'none' }}>
+                    <p>{sub}</p>
+                  </Link>
                 ))}
               </div>
             </li>
