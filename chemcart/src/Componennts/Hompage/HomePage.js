@@ -92,7 +92,7 @@ const HomePage = () => {
         className="background-section"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <h1>Source, Taste, and Innovate</h1>
+        <h1>Source, Test, and Innovate</h1>
       </div>
       <main>
         <div className="intro-text">
